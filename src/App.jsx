@@ -5,6 +5,7 @@ import SearchBox from "./components/SearchBox/SearchBox";
 import ContactList from "./components/ContactList/ContactList";
 import styles from "./App.module.css";
 import "modern-normalize/modern-normalize.css";
+import News from "./components/News/News";
 
 const App = () => {
   const [contacts, setContacts] = useState(() => {
@@ -49,6 +50,7 @@ const App = () => {
         contacts={filteredContacts}
         onDeleteContact={deleteContact}
       />
+      <News />
     </div>
   );
 };
